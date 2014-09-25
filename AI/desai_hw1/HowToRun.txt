@@ -1,0 +1,19 @@
+HOW TO RUN?
+
+
+Run main.py {python main.py}
+Input the equation after the prompt “eq>”
+Input the variable for which equation needs to be solved for after prompt “var>”
+
+
+Disclaimers:
+
+* Used python 2.7.5 
+* Multiple instances of the variable for which equation needs to be solved is not handled (eg. : “2x + 3 = 4 + x“ this is not handled)
+* Equations inside sprt/log/ln is not handled (eg: “sqrt(x+1) = 2” is not handled but “sqrt(x) = 2” is handled)
+* The identities “sin^2 + cos^2” will get solved to ‘1’ only if placed next to each other (eg. : “sin(x)^2 + cos(x)^2” is handled but “sin(x)^2 + y + cos(x)^2” is not handled)
+* Unary Minus is not handled
+* Changed color for WHITE to '' instead of '\033[97m'
+* Many helper Functions are used and all helper functions have their role mentioned above the definition
+* Calculus is not handled
+* e^x = 1 => x = ln(1) is not handled but ln(x) = 1 => x = e^1 is handled

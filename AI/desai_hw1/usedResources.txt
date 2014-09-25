@@ -1,0 +1,6 @@
+I have made use of following Resources and would like to acknowledge them.
+
+1) AIAMA-Python  https://code.google.com/p/aima-python/ (used code for util.py and A*-search algorithm from here)
+2) The code for parser provided by Dr. Dylan Shell (http://robotics.cs.tamu.edu/dshell/cs625/asgn1/equationparser-0.1.tar.gz)
+3) https://docs.python.org for finding out usage of inbuilt libraries like operator
+4) http://stackoverflow.com for finding out exactly how to call function on each item in list (http://stackoverflow.com/questions/2682012/how-to-call-same-method-for-a-list-of-objects)
