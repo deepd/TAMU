@@ -1,0 +1,5 @@
+How to Run:
+
+1) Get into prolog terminal from the directory where the file is saved
+2) ['ai'].
+3) path(x,y,Path)

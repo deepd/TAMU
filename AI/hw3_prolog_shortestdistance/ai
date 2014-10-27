@@ -1,0 +1,42 @@
+arc(m,p,1).
+arc(m,q,2).
+arc(m,s,10).
+arc(p,s,2).
+arc(q,s,1).
+
+% Check if Connected
+connected(X,Y,L) :- arc(X,Y,L).
+
+% Find Shortest Path (Main call)
+path(A,B,P):- shortest(A,B,P,_  ).
+
+% Helper path function
+path2(A,B,Path,Len) :-
+       goto(A,B,[A],Q,Len), 
+       reverse(Q,Path).
+
+% Check if direct path from A to B
+goto(A,B,P,[B|P],L) :- 
+       connected(A,B,L).
+
+% Check if indirect path from A to B
+goto(A,B,Visited,Path,L) :-
+       connected(A,C,D),           
+       C \== B,
+       \+member(C,Visited),
+       goto(C,B,[C|Visited],Path,L1),
+       L is D+L1.  
+
+% Find shortest path (helper function)
+shortest(A,B,Path,Length) :-
+   setof([P,L],path2(A,B,P,L),Set), % make a set of [P,L]
+   Set = [_|_], % fail if set is empty
+   minimal(Set,[Path,Length]). % find minimal of set
+
+% Minimal Function calls min function to find minimum
+minimal([F|R],M) :- min(R,F,M).
+
+% min function finds minimum of set
+min([],M,M).
+min([[P,L]|R],[_,M],Min) :- L < M, min(R,[P,L],Min). 
+min([_|R],M,Min) :- min(R,M,Min).
