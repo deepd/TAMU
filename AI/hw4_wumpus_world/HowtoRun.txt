@@ -1,0 +1,11 @@
+How to Run:
+
+Start SWI-Prolog:
+pl
+Load the world simulator:
+?- ['wumpus_world.pl'].
+Load the agent:
+?- ['my_agent.pl'].
+Run the agent:
+?- evaluate_agent(1, Score, Time).
+Correct to: "wumpus:evaluate_agent(1, Score, Time)"? y

@@ -1,0 +1,6 @@
+List of Resources Used:
+
+1) http://stackoverflow.com
+2) https://github.com/rlegendi/wumpus-prolog
+3) http://www.learnprolognow.org
+4) http://www.csupomona.edu/~jrfisher/www/prolog_tutorial/contents.html
