@@ -1,0 +1,5 @@
+How to Run:
+
+./blackbox -o domain.pddl -f problem4.pddl
+./blackbox -o domain.pddl -f problem5.pddl
+./blackbox -o domain.pddl -f problem6.pddl

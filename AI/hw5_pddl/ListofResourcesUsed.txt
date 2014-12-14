@@ -1,0 +1,8 @@
+List of Resources Used:
+
+1) http://en.wikipedia.org/wiki/Planning_Domain_Definition_Language
+2) http://users.cecs.anu.edu.au/˜patrik/pddlman/writing.html
+3) http://www.cs.toronto.edu/˜sheila/384/w11/Assignments/A3/veloso-PDDL_by_Example.pdf
+4) http://www.cs.toronto.edu/~sheila/2542/s14/A1/introtopddl2.pdf
+5) http://www.cs.rochester.edu/~kautz/satplan/blackbox/patrik-haslum-writing-pddl.html
+6) https://www.cs.rochester.edu/u/kautz/minichallenge/dagstuhl-mini-challenge.ppt
