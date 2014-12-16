@@ -25,7 +25,7 @@ class Particle:
 	    self.gs = gs
 
 	def display(self):
-		print "( %d, %d, %d, %d, %d )" % (self.x, self.y, self.size, self.transparency, self.z)
+		print "( %d, %d, %d, %d, %d, %d)" % (self.x, self.y, self.size, self.transparency, self.z, self.gs)
 
 	def drawit(self):
 		self.s = pygame.Surface((0,0))
@@ -39,7 +39,7 @@ class Particle:
 
 def fitness(im):
 	count = 0	
-	target = Image.open("cd.jpg")
+	target = Image.open("/Users/deep/aiproject/cd.jpg")
 	target = target.load()
 	i = 0
 	while i < height:
@@ -76,8 +76,7 @@ if __name__ == "__main__":
 	pil_image = Image.fromstring("RGB",(height,width),pil_string_image)
 	pil_image.save("genetic0.jpg")
 	fitnessvalue = fitness(pil_image.load())
-	print fitnessvalue
-
+	
 	for i in range(1,1000):
 		newfitness = 9999999999999999
 		while newfitness > fitnessvalue:
@@ -105,8 +104,6 @@ if __name__ == "__main__":
 			pil_image2 = Image.fromstring("RGB",(height,width),pil_string_image2)
 			newfitness = fitness(pil_image2.load())
 			if newfitness < fitnessvalue:
-				print newfitness
-				print "success"
 				pil_image2.save("genetic%s.jpg" % i)
 				fitnessvalue = newfitness
 
