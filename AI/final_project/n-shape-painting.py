@@ -1,7 +1,5 @@
 from PIL import Image
 import aggdraw, random
-#import psyco
-#psyco.full()
 import copy
 
 
